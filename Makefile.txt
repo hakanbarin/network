@@ -1,0 +1,11 @@
+CFLAGS = -g -Wall -Wextra
+
+CC = gcc
+
+all: networking
+
+networking: networking.c
+	$(CC) $(CFLAGS) -o networking networking.c
+
+clean:
+	rm -f networking
